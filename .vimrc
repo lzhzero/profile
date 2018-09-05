@@ -1,7 +1,8 @@
 set pastetoggle=<F2>
 set encoding=utf-8
 map <F3> :NERDTreeToggle<CR>
-
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
 
 let g:NERDTreeMouseMode=2
 
