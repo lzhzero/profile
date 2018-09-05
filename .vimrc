@@ -1,5 +1,5 @@
 set pastetoggle=<F2>
-
+set encoding=utf-8
 map <F3> :NERDTreeToggle<CR>
 
 
@@ -35,8 +35,10 @@ inoremap <4-MiddleMouse> <Nop>
 
 set gcr=a:block-blinkon0
 "let g:Powerline_colorscheme='solarized256'
-let g:airline#extensions#tabline#enabled = 1
-set laststatus=2
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline_section_b = '%{strftime("%c")}'
+"set laststatus=2
+let g:airline_powerline_fonts = 1
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 set incsearch
@@ -59,35 +61,34 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
-Plugin 'vim-scripts/phd'
+"Plugin 'derekwyatt/vim-scala'
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'tomasr/molokai'
+"Plugin 'vim-scripts/phd'
 "Plugin 'Lokaltog/vim-powerline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'derekwyatt/vim-fswitch'
-Plugin 'kshenoy/vim-signature'
-Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
-Plugin 'majutsushi/tagbar'
-Plugin 'vim-scripts/indexer.tar.gz'
-Plugin 'vim-scripts/DfrankUtil'
-Plugin 'vim-scripts/vimprj'
-Plugin 'dyng/ctrlsf.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-scripts/DrawIt'
+Plugin 'tpope/vim-fugitive'
+"Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'derekwyatt/vim-fswitch'
+"Plugin 'vim-scripts/indexer.tar.gz'
+"Plugin 'vim-scripts/DfrankUtil'
+"Plugin 'vim-scripts/vimprj'
+"Plugin 'dyng/ctrlsf.vim'
+"Plugin 'terryma/vim-multiple-cursors'
+"Plugin 'scrooloose/nerdcommenter'
+"Plugin 'vim-scripts/DrawIt'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'derekwyatt/vim-protodef'
-Plugin 'scrooloose/nerdtree'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'gcmt/wildfire.vim'
-Plugin 'sjl/gundo.vim'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'lilydjwg/fcitx.vim'
+"Plugin 'derekwyatt/vim-protodef'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'fholgado/minibufexpl.vim'
+"Plugin 'gcmt/wildfire.vim'
+"Plugin 'sjl/gundo.vim'
+"Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'suan/vim-instant-markdown'
+"Plugin 'lilydjwg/fcitx.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
