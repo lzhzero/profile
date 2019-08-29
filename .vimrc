@@ -6,6 +6,7 @@ imap <MiddleMouse> <Nop>
 
 let g:NERDTreeMouseMode=2
 
+set tabstop=4
 set mouse=a
 if has("mouse_sgr")
 	set ttymouse=sgr
@@ -62,6 +63,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'pseewald/vim-anyfold'
+Plugin 'vim-python/python-syntax'
 "Plugin 'derekwyatt/vim-scala'
 "Plugin 'altercation/vim-colors-solarized'
 "Plugin 'tomasr/molokai'
@@ -97,3 +100,5 @@ Plugin 'scrooloose/nerdtree'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+autocmd Filetype * AnyFoldActivate
+set foldlevel=99
