@@ -63,7 +63,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'pseewald/vim-anyfold'
+"Plugin 'pseewald/vim-anyfold'
 Plugin 'vim-python/python-syntax'
 "Plugin 'derekwyatt/vim-scala'
 "Plugin 'altercation/vim-colors-solarized'
@@ -100,5 +100,5 @@ Plugin 'scrooloose/nerdtree'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-autocmd Filetype * AnyFoldActivate
-set foldlevel=99
+"autocmd Filetype * AnyFoldActivate
+"set foldlevel=30
