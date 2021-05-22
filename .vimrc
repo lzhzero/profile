@@ -7,6 +7,7 @@ imap <MiddleMouse> <Nop>
 let g:NERDTreeMouseMode=2
 
 set tabstop=4
+set shiftwidth=4
 set mouse=a
 if has("mouse_sgr")
 	set ttymouse=sgr
